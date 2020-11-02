@@ -1,1 +1,1 @@
-# CN-XY.github.io
+# XY.github.io
