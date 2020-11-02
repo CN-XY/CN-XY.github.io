@@ -1,1 +1,1 @@
-# XY.github.io
+# a boring web
