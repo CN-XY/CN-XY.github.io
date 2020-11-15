@@ -28,6 +28,14 @@ body
     bottom:0%;
     text-align:center;
 }
+.button
+{
+    color:#111111;
+    background-color:#333333;
+    width:150px;
+    height:100px;
+    border:10px solid #222222
+}
 </style>
 </head>
 <body>
@@ -38,12 +46,15 @@ function date(){
 }
 function lj(){
     score+=1;
+}
+function print(){
     document.getElementById("score").innerHTML=score;
 }
 </script>
 <p class="line">X的小小小小站  |  垃圾堆</p>
-<button type="button" onclick="date()">点击这里显示日期</button><br>
-<button type="button" onclick="lj()">点击这里显示变量</button><br>
+<button type="button" onclick="date()" class="button">点击这里显示日期</button><br>
+<button type="button" onclick="lj()">点击这里将变量+1</button><br>
+<button type="button" onclick="print()">点击这里显示变量</button><br>
 <p id="date"></p>
 <p id="score"></p>
 <center class="down">小站由X搭建，欢迎共同学习</center>
