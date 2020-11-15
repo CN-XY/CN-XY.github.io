@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<meta charset="utf8">
+<html>
+<head>
+<title>X的垃圾堆</title>
+<style>
+body
+{
+    background-color:#555555;
+}
+.line
+{
+    text-align:center;
+    text-decoration:none;
+    color:#111111;
+    background-color:#333333;
+    width:auto px;
+    border:25px solid #333333;
+    padding:10px 5px;
+    margin:-10px -10px 10px -10px;
+    font-size:50px
+}
+.down
+{
+    color:#111111;
+    font-size:25px;
+    position:fixed;
+    bottom:0%;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+<script>
+function date(){
+    document.getElementById("date").innerHTML=Date();
+}
+</script>
+<p class="line">X的小小小小站  |  垃圾堆</p>
+<button type="button" onclick="date()">点击这里显示日期</button><br>
+<p id="date"></p>
+<p id="score"></p>
+<center class="down">小站由X搭建，欢迎共同学习</center>
+</body>
+</html>
