@@ -32,12 +32,18 @@ body
 </head>
 <body>
 <script>
+var score=0;
 function date(){
     document.getElementById("date").innerHTML=Date();
+}
+function lj(){
+    score+=1;
+    document.getElementById("score").innerHTML=score;
 }
 </script>
 <p class="line">X的小小小小站  |  垃圾堆</p>
 <button type="button" onclick="date()">点击这里显示日期</button><br>
+<button type="button" onclick="lj()">点击这里显示变量</button><br>
 <p id="date"></p>
 <p id="score"></p>
 <center class="down">小站由X搭建，欢迎共同学习</center>
