@@ -47,38 +47,31 @@ a
 </head>
 <body>
 <script>
+alert("欢迎来到X的垃圾堆 因为是垃圾堆所以会 很 臭")
 var score=0;
-document.getElementById("date").innerHTML=Date();
-document.getElementById("score").innerHTML=score;
 function date(){
     document.getElementById("date").innerHTML=Date();
 }
 function lj(){
-    score+=1;
-    document.getElementById("score").innerHTML=score;
+    score+=1; document.getElementById("score").innerHTML=score;
 }
-function jiance(){
+function jiance()
+{
     var x=document.getElementById("input").value;
-    if (x=="114514")
+    if(x=="114514")	
     {
-    	    alert("密码被你臭开了")；
-    	    alert("但是什么也没发生")；
-    	}
-    	else
-    	{
-    	    alert("密码错误")
-    	}
+        alert("你好臭啊");	
+    }
 }
 </script>
-<p class="line">X的小小小小站  |  垃圾堆</p>
+<p class="line">X的小小小小站 | 垃圾堆</p>
 <button type="button" onclick="date()" class="button">点击这里显示日期</button>
 <button type="button" onclick="lj()" class="button">点击这里将变量+1</button>
 <center id="date" style="font-size:20px;"></center>
 <center id="score" style="font-size:50px;"></center>
-<center class="down">小站由X搭建，欢迎共同学习（V1.0.0）</center>
-<br>
+<center class="down">小站由X搭建，欢迎共同学习（V1.1.5）</center><br>
 <p class="a">输入密码:</p>
 <input id="input" type="text">
-<button type="button" onclick="jiance()">确定</button>
+<button type="button" onclick="jiance()">ok</button>
 </body>
 </html>
