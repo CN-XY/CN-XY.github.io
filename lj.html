@@ -53,7 +53,12 @@ function date(){
     document.getElementById("date").innerHTML=Date();
 }
 function lj(){
-    score+=1; document.getElementById("score").innerHTML=score;
+    score+=1; 
+    document.getElementById("score").innerHTML=score;
+    if(score>20)
+    {
+    	    document.getElementById("texta").innerHTML="你还真是无聊）"
+    	}
 }
 function jiance()
 {
@@ -67,9 +72,10 @@ function jiance()
 <p class="line">X的小小小小站 | 垃圾堆</p>
 <button type="button" onclick="date()" class="button">点击这里显示日期</button>
 <button type="button" onclick="lj()" class="button">点击这里将变量+1</button>
-<center id="date" style="font-size:20px;"></center>
-<center id="score" style="font-size:50px;"></center>
-<center class="down">小站由X搭建，欢迎共同学习（V1.1.5）</center><br>
+<center id="date" style="font-size:20px;" class="a"></center>
+<center id="score" style="font-size:50px;" class="a"></center>
+<center id="texta" style="font-size:50px;" class="a"></center>
+<center class="down">小站由X搭建，欢迎共同学习（V1.1.8）</center><br>
 <p class="a">输入密码:</p>
 <input id="input" type="text">
 <button type="button" onclick="jiance()">ok</button>
