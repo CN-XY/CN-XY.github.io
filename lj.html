@@ -6,23 +6,23 @@
 <style>
 body
 {
-    background-color:#555555;
+    background-color:#F0F0F0;
 }
 .line
 {
     text-align:center;
     text-decoration:none;
-    color:#111111;
-    background-color:#333333;
+    color:#BBBBBB;
+    background-color:#DDDDDD;
     width:auto px;
-    border:25px solid #333333;
+    border:25px solid #DDDDDD;
     padding:10px 5px;
     margin:-10px -10px 10px -10px;
     font-size:50px
 }
 .down
 {
-    color:#111111;
+    color:#BBBBBB;
     font-size:25px;
     position:fixed;
     bottom:0%;
@@ -30,25 +30,26 @@ body
 }
 .button
 {
-    color:#111111;
+    color:#BBBBBB;
     font-size:20px;
-    background-color:#333333;
+    background-color:#DDDDDD;
     width:200px;
     height:50px;
-    border:5px solid #222222;
+    border:5px solid #CCCCCC;
     padding:5px 10px;
     margin:-10px 10px 10px -10px;
 }
 a
 {
-    color:#111111;
+    color:#BBBBBB;
 }
 </style>
 </head>
 <body>
 <script>
-alert("欢迎来到X的垃圾堆 因为是垃圾堆所以会  很  臭")
 var score=0;
+document.getElementById("date").innerHTML=Date();
+document.getElementById("score").innerHTML=score;
 function date(){
     document.getElementById("date").innerHTML=Date();
 }
@@ -56,13 +57,17 @@ function lj(){
     score+=1;
     document.getElementById("score").innerHTML=score;
 }
-function jiance()
-{
-	var x=document.getElementById("input").value;
-	if(x=="114514")
-	{
-		alert("你好臭啊");
-	}
+function jiance(){
+    var x=document.getElementById("input").value;
+    if (x=="114514")
+    {
+    	    alert("密码被你臭开了")；
+    	    alert("但是什么也没发生")；
+    	}
+    	else
+    	{
+    	    alert("密码错误")
+    	}
 }
 </script>
 <p class="line">X的小小小小站  |  垃圾堆</p>
@@ -70,10 +75,10 @@ function jiance()
 <button type="button" onclick="lj()" class="button">点击这里将变量+1</button>
 <center id="date" style="font-size:20px;"></center>
 <center id="score" style="font-size:50px;"></center>
-<center class="down">小站由X搭建，欢迎共同学习（V1.1.2）</center>
+<center class="down">小站由X搭建，欢迎共同学习（V1.0.0）</center>
 <br>
 <p class="a">输入密码:</p>
 <input id="input" type="text">
-<button type="button" onclick="jiance()">ok</button>
+<button type="button" onclick="jiance()">确定</button>
 </body>
 </html>
