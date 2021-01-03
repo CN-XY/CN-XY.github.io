@@ -52,9 +52,9 @@ var j=0;
 var k=0;
 var num=0
 function count(){
-    i=number(document.getElementById("n1").value);
+    i=parseFloat(document.getElementById("n1").value);
     j=document.getElementById("c").value;
-    k=number(document.getElementById("n2").value);
+    k=parseFloat(document.getElementById("n2").value);
     if(j=="*"){
     	num=i*k;
     }else if(j=="/"){
