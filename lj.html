@@ -51,17 +51,18 @@ a
 <input type="text" id="c">
 <input type="text" id="n2">
 <button type="button" onclick="count()">=</button>
-<p id="jieguo">114514</p>
-<p class="down">小站由X搭建，欢迎共同学习（V1.2.6）</p>
+<p id="jieguo">NaN</p>
+<p class="down">小站由X搭建，欢迎共同学习（V1.2.7）</p>
 <script>
 var i=0;
 var j=0;
 var k=0;
 var num=0
 function count(){
-    i=parseFloat(document.getElementById("n1").value);
-    j=document.getElementById("c").value;
-    k=parseFloat(document.getElementById("n2").value);
+    var i=parseFloat(document.getElementById("n1").value);
+    var j=document.getElementById("c").value;
+    var k=parseFloat(document.getElementById("n2").value);
+    var num=0;
     if(j=="*"){
     	num=i*k;
     }else if(j=="/"){
@@ -71,7 +72,7 @@ function count(){
     }else if(j=="-"){
     	num=i-k;
     }
-    document.getElementById("jieguo").inner=num;
+    document.getElementById("jieguo").innerHTML=num;
 }
 </script>
 </body>
